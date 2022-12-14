@@ -16,12 +16,16 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .link {
   text-decoration: none;
 }
 .list {
   list-style-type: none;
+}
+img {
+  display: block;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -31,7 +35,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   
-  margin: auto 0;
+  /* margin: auto 0; */
+  padding: 12px 0;
   
 }
 .logo-footer {
@@ -56,7 +61,7 @@ body {
 .nav-list {
   display: flex;
   padding: 0;
-  margin-left: 95px;
+  margin: 0 0 0 95px;
 }
 .nav-list li + li {
   margin-left: 50px;
@@ -67,6 +72,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
+}
+.nav-item {
+  padding: 16px 0;
 }
 .line {
   height: 1px;
@@ -86,8 +94,9 @@ body {
 }
 .header-address-list{
   display: flex;
-  margin-left: auto;
-  padding: 0;
+  
+  padding: 16px 0;
+  margin: 0 0 0 auto
 }
 .header-address-list li + li {
   margin-left: 40px;
@@ -106,9 +115,8 @@ body {
 .hero {
   background: #2F303A;
   text-align: center;
-  height: 600px;
   width: 100%;
-  margin-bottom: 95px;
+  padding: 200px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,15 +167,16 @@ body {
   margin: -1px;
 }
 .features {
-  margin-bottom: 100px;
+  padding: 94px 0;
 }
 .features-list {
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 30px;
 }
 .features-item {
-  flex: 1 1 50%;
+  width: 270px;
 }
 .features-subtitle {
   font-weight: 700;
@@ -176,8 +185,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
-  padding-bottom: 10px;
   margin: 0;
+  margin-bottom: 10px;
 }
 .features-text {
   font-weight: 400;
@@ -187,6 +196,9 @@ body {
   color: var(--subtitle-color);
   margin: 0;
 }
+.skills {
+  padding-bottom: 94px;
+}
 .skills-title {
   font-weight: 700;
   font-size: 36px;
@@ -194,13 +206,13 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
   text-align: center;
+  margin-top: 0;
   margin-bottom: 50px;
 }
 .skills-list {
   margin: 0;
   padding: 0;
   display: flex;
-  margin-bottom: 95px;
 
 }
 .skills-list > .skills-item {
@@ -229,23 +241,22 @@ body {
   display: flex;
   margin-top: 50px;
   padding: 0;
-  margin-bottom: 95px;
   justify-content: center;
+  gap: 30px;
+  margin-bottom: 0;
 }
 .team-iteam {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-right: 30px;
+   
 }
-.skll-delt { 
-  margin: 0;
-}
+
 .team-list > .skills-item {
   flex-basis: calc(100% / 4);
 }
-.team-list > .skills-item:last-child {
-  margin: 0;
+.foto-cntr {
+  padding: 15px;
 }
 .team-subtitle {
   font-weight: 500;
@@ -254,7 +265,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
   text-align: center;
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 .team-text {
@@ -264,7 +275,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--subtitle-color);
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 .footer {
   background: var(--footer-color);
@@ -279,10 +290,10 @@ body {
   letter-spacing: 0.03em; 
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  margin: 30px 0 0 0;
 }
 .footer-address-list {
   padding: 0;
-  margin: 30px 0 0 0;
 }
 .footer-address-item {
   margin-bottom: 10px;
@@ -296,11 +307,15 @@ body {
 .footer-address:active {
   color: var(--white-color); 
 }
+.section-main {
+  padding: 94px 0;
+  display: block;
+}
 .btn-list {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin-top: 95px;
+  margin-top: 0;
   margin-bottom: 50px;
 }
 .btn-item:not(:first-child) {
@@ -336,34 +351,40 @@ body {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
-
-
 .gallery-item {
   border: 1px solid #EEEEEE;
-   margin-bottom: 30px;
+  margin-bottom: 30px;
 }
-.gallery-item {
-  margin-right: 30px;
-}
-.gallery-item:nth-child(3n) {
-  margin-right: 0;
-}
-.gallery-item:nth-child(n+7) {
-  margin-bottom: 95px;
+
+
+.gllr-cntr {
+  margin-top: -30px;
+  margin-left: -30px;
 }
 .gallery {
   padding: 0;
+  margin: 0; 
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.gallery > .gallery-item {
+  padding: 0;
   margin: 0;
- display: flex;
- flex-wrap: wrap;
+  display: block;
+  
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .gallery-subtitle {
- font-weight: 700;
+ font-weight: 700; 
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color); 
-  margin: 20px auto 4px 24px;
+  margin: 0;
+  
 }
 .gallery-text {
   font-weight: 400;
@@ -371,5 +392,5 @@ body {
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--subtitle-color);
-  margin: 4px auto 20px 24px;
+  margin: 0;
 }
