@@ -36,7 +36,7 @@ img {
   color: var(--accent-color);
   
   /* margin: auto 0; */
-  padding: 12px 0;
+  padding: 24px 0;
   
 }
 .logo-footer {
@@ -67,15 +67,16 @@ img {
   margin-left: 50px;
 }
 .nav-link {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-.nav-item {
-  padding: 16px 0;
-}
+
 .line {
   height: 1px;
   background-color: #ECECEC;
@@ -94,8 +95,6 @@ img {
 }
 .header-address-list{
   display: flex;
-  
-  padding: 16px 0;
   margin: 0 0 0 auto
 }
 .header-address-list li + li {
@@ -108,6 +107,8 @@ img {
   letter-spacing: 0.02em;
 
   color: var(--subtitle-color);
+  display: flex;
+  padding: 32px 0;
 }
 .hdr-cntr {
   display: flex;
@@ -137,6 +138,9 @@ img {
   color: var(--white-color);
   margin-top: 0;
   margin-bottom: 30px;
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .hero-button { 
   font-family: 'Roboto';
@@ -224,7 +228,6 @@ img {
 
 .team {
   background: #F5F4FA;
-  margin-top: 95px;
   padding-bottom: 95px;
   padding-top: 95px;
 }
@@ -256,7 +259,7 @@ img {
   flex-basis: calc(100% / 4);
 }
 .foto-cntr {
-  padding: 15px;
+  padding: 30px;
 }
 .team-subtitle {
   font-weight: 500;
@@ -266,7 +269,7 @@ img {
   color: var(--title-color);
   text-align: center;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 .team-text {
   font-weight: 400;
@@ -275,6 +278,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--subtitle-color);
   text-align: center;
+  margin-top: 10px;
   margin-bottom: 0;
 }
 .footer {
@@ -294,6 +298,7 @@ img {
 }
 .footer-address-list {
   padding: 0;
+  margin: 0;
 }
 .footer-address-item {
   margin-bottom: 10px;
@@ -352,14 +357,7 @@ img {
   color: var(--white-color);
 }
 .gallery-item {
-  border: 1px solid #EEEEEE;
   margin-bottom: 30px;
-}
-
-
-.gllr-cntr {
-  margin-top: -30px;
-  margin-left: -30px;
 }
 .gallery {
   padding: 0;
@@ -377,6 +375,9 @@ img {
   margin-left: 30px;
   margin-top: 30px;
 }
+.port-foto-cntr {
+  border: 1px solid #EEEEEE;
+}
 .gallery-subtitle {
  font-weight: 700; 
   font-size: 18px;
@@ -384,6 +385,9 @@ img {
   letter-spacing: 0.06em;
   color: var(--title-color); 
   margin: 0;
+  margin-bottom: 4px;
+  margin-top: 20px;
+  margin-left: 24px;
   
 }
 .gallery-text {
@@ -393,4 +397,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--subtitle-color);
   margin: 0;
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
